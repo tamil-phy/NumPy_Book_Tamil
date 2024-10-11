@@ -1,6 +1,6 @@
 [toc]
 
-
+<div style="page-break-after: always;"></div>
 
 ### 1. NUMPY − ARRAY ATTRIBUTES
 
@@ -1270,6 +1270,8 @@ Unique values: [1 2 3 4 5]
 
 **குறிப்பு**: Data analysis மற்றும் data cleaning செயல்பாடுகளில் redundancy-ஐ அகற்றுகிறது.
 
+<div style="page-break-after: always;"></div>
+
 ### 10. NUMPY – BINARY OPERATORS
 
 NumPy-யில் **binary operators** பயன்படுத்தி bitwise operations செய்யலாம். Bitwise operations binary (இரும) data-களில் வேலை செய்யும், அதாவது bit-அளவிலான data-ஐ நேரடியாக மாற்றும். இவை data manipulation மற்றும் bit-level operations-ஐ எளிதாக்கும்.
@@ -1402,6 +1404,8 @@ Right Shift: [2]
 
 இந்த binary operators data-ஐ bit-level-ல் manipulate செய்யவும், binary data handling ஐ memory-efficient-ஆகவும் செய்ய உதவுகின்றன.
 
+<div style="page-break-after: always;"></div>
+
 ### 11. NUMPY − STRING FUNCTIONS
 
 NumPy-யில் **string functions** array-களில் உள்ள string values-ஐ manipulate செய்ய உதவுகின்றன. NumPy-யின் string functions-ஐ பயன்படுத்தி, strings-ஐ uppercase, lowercase, join, replace போன்ற operations செய்யலாம். இது data processing-ஐ எளிதாக்குவதுடன், string manipulation-ஐ memory-efficient-ஆகவும் செய்கிறது.
@@ -1462,6 +1466,8 @@ Uppercase Strings: ['HELLO' 'WORLD']
    **Output:** `Split String: ['Hello', 'World']`
 
 இந்த string functions NumPy array-களில் உள்ள strings-ஐ manipulate செய்ய memory-efficient methods-ஐ வழங்குகின்றன, இது data processing மற்றும் text handling-ஐ எளிதாக்குகிறது.
+
+<div style="page-break-after: always;"></div>
 
 ### 12. NUMPY − MATHEMATICAL FUNCTIONS
 
@@ -1588,6 +1594,8 @@ Logarithmic Values: [0. 1. 2.]
 
 இந்த NumPy mathematical functions arrays-இல் arithmetic மற்றும் statistical operations-ஐ memory-efficient-ஆகவும் computationally fast-ஆகவும் செயல்படுத்த உதவுகின்றன.
 
+<div style="page-break-after: always;"></div>
+
 ### 13. NUMPY − ARITHMETIC OPERATIONS
 
 NumPy-யில் **arithmetic operations** மிக எளிமையானவை, மற்றும் array-களின் values-ஐ நேரடியாக மாற்றி கொண்டுவர முடியும். இதனால், data analysis மற்றும் scientific calculations-ஐ வேகமாகவும் திறமையாகவும் செய்ய முடிகிறது. 
@@ -1641,7 +1649,7 @@ Power values: [ 4 27 16]
 #### விளக்கம்:
 - **base** values = [2, 3, 4] 
 - **exponent** values = [2, 3, 2]
-- Power calculation = [2^2, 3^3, 4^2] = [4, 27, 16]
+- Power calculation = [$2^2$, $3^3$, $4^2$] = [4, 27, 16]
 - **np.power()** function base array-இன் ஒவ்வொரு value-க்கும் exponent array-ஐ use செய்து exponentiation செய்கிறது.
 
 #### 13.3. numpy.mod()
@@ -1689,6 +1697,8 @@ Modulus values: [1 0 2]
   **Output:** `Subtraction result: [6 15 24]`
 
 இந்த arithmetic operations data analysis மற்றும் numerical computations-ஐ memory-efficient-ஆகவும், computationally fast-ஆகவும் செயல்படுத்த உதவுகின்றன.
+
+<div style="page-break-after: always;"></div>
 
 ### 14. NUMPY − STATISTICAL FUNCTIONS
 
@@ -1876,6 +1886,8 @@ Variance: 200.0
 
 இந்த statistical functions data analysis மற்றும் data interpretation-ல் முக்கிய பங்காற்றுகின்றன, மேலும் decision-making செயல்பாடுகளை துல்லியமாகவும் memory-efficient-ஆகவும் செய்ய உதவுகின்றன.
 
+<div style="page-break-after: always;"></div>
+
 ### 15. NUMPY − SORT, SEARCH & COUNTING FUNCTIONS
 
 NumPy-யில் **sort, search மற்றும் counting** functions-ஐ பயன்படுத்தி array-களின் values-ஐ வரிசைப்படுத்தவும், தேடவும் மற்றும் எண்ணிக்கையிடவும் முடியும். இவை data analysis மற்றும் data manipulation-ஐ எளிமையாக்க உதவுகின்றன.
@@ -2038,6 +2050,8 @@ Extracted values greater than 4: [5 8 9]
 
 இந்த functions data sorting, searching மற்றும் filtering operations-ஐ memory-efficient-ஆகவும் computationally fast-ஆகவும் செய்கின்றன, மேலும் data analysis மற்றும் data handling-ஐ எளிதாக்குகின்றன.
 
+<div style="page-break-after: always;"></div>
+
 ### 16. NUMPY − BYTE SWAPPING
 
 NumPy-யில் **byteswap()** function-ஐ பயன்படுத்தி array-இல் உள்ள values-ஐ byte-order மாற்றம் செய்ய முடியும். Byte swapping என்பது data representation-ஐ big-endian மற்றும் little-endian format-களுக்கு இடையே மாற்றுவது ஆகும். இது cross-platform data compatibility மற்றும் binary data handling-க்கு உதவுகிறது.
@@ -2095,6 +2109,8 @@ Byte swapped array: [  256     1 38530]
 - **Data Integrity**: Byte swapping operations-இல் data corruption இல்லாமல் transfer-ஐ உறுதி செய்கிறது.
 
 இந்த **byteswap()** operation data interoperability மற்றும் endianess conversion-ஐ எளிமையாக memory-efficient-ஆகவும் நுட்பமாகவும் செயல்படுத்த உதவுகிறது.
+
+<div style="page-break-after: always;"></div>
 
 ### 17. NUMPY − COPIES & VIEWS
 
@@ -2183,6 +2199,8 @@ Deep copy array: [10  2 30]
 
 NumPy-யின் **copies & views** methods data manipulation-ஐ எளிதாக்கி, memory-யை திறமையாக handle செய்ய உதவுகின்றன.
 
+<div style="page-break-after: always;"></div>
+
 ### 18. NUMPY − MATRIX LIBRARY
 
 NumPy-யில் உள்ள **matrix library** என்பது matrix-களை உருவாக்கவும், நிர்வகிக்கவும் உதவும் functions-களை கொண்டுள்ளது. NumPy.matlib functions-ஐ பயன்படுத்தி, நீங்கள் matrix operations-ஐ memory-efficient-ஆகவும் computationally fast-ஆகவும் செயல்படுத்த முடியும். இது scientific computing மற்றும் linear algebra operations-ஐ எளிமையாக செய்கிறது.
@@ -2245,14 +2263,7 @@ Zeros matrix:
 #### எப்போது **matlib.zeros()** பயன்படுத்த வேண்டும்?
 
 - **Default Initialization**: Numerical operations-ஐ ஆரம்ப கட்டமாக zeros matrix-கள் கொண்ட data structure-ஐ பயன்படுத்தும்போது.
-
 - **Matrix Operations**: Linear algebra மற்றும் matrix multiplication போன்ற கணக்கீடுகளுக்கு ஆரம்ப கட்டத்தில் null values ஆக இருக்கும் data-ஐ initialize செய்ய வேண்டும்.
-
-  
-
-### 18. NUMPY − MATRIX LIBRARY (continued)
-
-NumPy-யின் **matrix library** matrix-களை உருவாக்கவும், நிர்வகிக்கவும், மற்றும் manipulate செய்ய உதவுகிறது. இந்த functions scientific computing, linear algebra, மற்றும் data analysis-ல் மிகவும் பயன்படும். 
 
 #### 18.3. numpy.matlib.ones()
 
@@ -2383,6 +2394,8 @@ Random matrix:
 - **Scientific Computing**: Stochastic analysis மற்றும் random sampling operations-ஐ memory-efficient-ஆக செய்ய உதவும்.
 
 NumPy-யின் matrix library functions-ஐ memory-efficient-ஆகவும், computationally fast-ஆகவும், data structures-ஐ initialize செய்ய பயன்படுத்தலாம். Scientific computing மற்றும் data analysis-ல் matrix-களை உருவாக்கவும், manipulate செய்யவும் இந்த functions மிகவும் பயனுள்ளதாக இருக்கும்.
+
+<div style="page-break-after: always;"></div>
 
 ### 19. NUMPY − LINEAR ALGEBRA
 
@@ -2529,6 +2542,8 @@ Solutions: [2. 3.]
    - 1x + 2y = 8
    - Solution: x = 2, y = 3
 
+<div style="page-break-after: always;"></div>
+
 ### 20. NUMPY − MATPLOTLIB
 
 NumPy-யுடன் **Matplotlib**-ஐ இணைத்து data-ஐ visualizations செய்வது மிகவும் எளிதாகவும் பயனுள்ளதாகவும் இருக்கிறது. Matplotlib plotting library-ஐ பயன்படுத்தி graphs மற்றும் charts உருவாக்கலாம். இது data-ஐ graphical format-ஆக represent செய்து, trends மற்றும் patterns-ஐ எளிதாக புரிந்து கொள்ள உதவுகிறது.
@@ -2627,6 +2642,8 @@ A bar chart with three categories: A, B, and C with their respective values repr
 2. **Scientific Analysis**: Research மற்றும் data analysis-ஐ graphs மற்றும் charts-ஐ உருவாக்கி, ஆழமான insights பெற.
 3. **Comparison & Analysis**: Subplots மற்றும் bar charts-ஐ பயன்படுத்தி multiple data sets-ஐ analyze செய்து compare செய்ய.
 
+<div style="page-break-after: always;"></div>
+
 ### 21. NUMPY – HISTOGRAM USING MATPLOTLIB
 
 Numpy-யுடன் **Matplotlib**-ஐ histogram உருவாக்கி data distribution-ஐ காணலாம். Histogram என்பது data-இன் frequency distribution-ஐ காண்பிக்கும் visual representation ஆகும், இது data-இல் values எவ்வாறு spread ஆகவுள்ளது என்பதைக் காட்டுகிறது.
@@ -2659,6 +2676,8 @@ A histogram displaying the frequency distribution of the data with 30 bins.
 - **data = np.random.randn(1000)** என்பது normal distribution கொண்ட 1000 random values-ஐ உருவாக்குகிறது.
 - **plt.hist()** function data-ஐ 30 bins-ஆக பிரித்து frequency distribution-ஐ காட்டுகிறது.
 - Histogram data distribution-ஐ எடுத்துக்காட்டி, data-இல் values எந்த range-ல் அதிகமாக உள்ளன என்பதைக் காட்டுகிறது.
+
+<div style="page-break-after: always;"></div>
 
 ### 22. NUMPY − I/O WITH NUMPY
 
@@ -2706,3 +2725,5 @@ Array saved as 'my_array.txt' with comma-separated values.
 #### விளக்கம்:
 - **np.savetxt()** function array-ஐ text file format-ல் (.txt) சேமிக்கிறது.
 - Text file format data-ஐ human-readable-ஆக save செய்ய உதவுகிறது, இது data analysis மற்றும் data sharing-க்கு பயனுள்ளதாக இருக்கும்.
+
+<div style="page-break-after: always;"></div>
