@@ -112,7 +112,7 @@ Flags of the array:
 
 இதன் மூலம், **flags** attribute NumPy array-இன் memory layout மற்றும் array-இன் உள்ளமைப்புகள் பற்றிய முழு தகவல்களை வழங்குகிறது.
 
-### 2. NUMPY − ARRAY CREATION ROUTINES
+<div style="page-break-after: always;"></div>
 
 ### 2. NUMPY − ARRAY CREATION ROUTINES
 
@@ -123,6 +123,7 @@ NumPy-ல் array-களை உருவாக்க பல்வேறு meth
 **numpy.empty()** function ஒரு initialization values இல்லாத array-ஐ உருவாக்க பயன்படுகிறது. இதனால், array-இல் உள்ள values ஏதாவது முன்பே memory-யில் இருந்த random values ஆக இருக்கும். இதனால், memory-யில் உள்ள values reset செய்யப்படாமல், அந்த values 그대로 array-இல் வரலாம்.
 
 **Syntax:**
+
 ```python
 numpy.empty(shape, dtype=float, order='C')
 ```
@@ -157,8 +158,6 @@ Empty array:
 - எப்போது values முக்கியமாக கருதப்படுகின்றனவோ, அப்போது **numpy.zeros( )** அல்லது **numpy.ones( )** போன்ற functions-ஐ பயன்படுத்துவது சிறந்தது.
 
 இந்த function **speed optimization** தேவைப்படும் போது மிகவும் பயனுள்ளதாக இருக்கும், ஏனெனில் இது memory allocation மட்டும் செய்து, values-ஐ initialize செய்யாது.
-
-
 
 #### 2.2. numpy.zeros
 
@@ -217,6 +216,8 @@ Ones array:
 - **zeros()** மற்றும் **ones()** functions, memory-யில் அடர்த்தியான array-களை உருவாக்கி, array-ஐ முறையாக initialize செய்து, எளிமையான calculations செய்ய உதவுகின்றன.
 
 இதன் மூலம், **zeros()** மற்றும் **ones()** functions மிகவும் பயனுள்ளதாக இருக்கும், ஏனெனில் அவை predictable values கொண்ட array-களை உருவாக்குகின்றன, computation-ஐ எளிதாக்குகின்றன.
+
+<div style="page-break-after: always;"></div>
 
 ### 3. NUMPY − ARRAY FROM EXISTING DATA
 
@@ -289,6 +290,8 @@ Array from iterable: [ 0  1  4  9 16]
 
 இதனால், NumPy-யில் data-ஐ நமக்கு வேண்டிய படி நமக்கு ஏற்கனவே உள்ள structures-இல் இருந்து array-களாக மாற்றி manipulations மற்றும் calculations செய்ய நம்மால் முடியும்.
 
+<div style="page-break-after: always;"></div>
+
 ### 4. NUMPY − ARRAY FROM NUMERICAL RANGES
 
 NumPy-யில் **எண்கள் அடிப்படையிலான array** களை உருவாக்க பல functions உள்ளன. இந்த functions array values-ஐ ஏறுவரிசையில் அல்லது குறிப்பிட்ட அளவுகளில் உருவாக்குவதற்கான எளிமையான வழிகளை வழங்குகின்றன. இதனால் sequences மற்றும் ranges கொண்ட array-களை உருவாக்க முடிகிறது.
@@ -351,6 +354,8 @@ Array using logspace: [  10.          31.6227766  100.         316.22776602 1000
 
 இந்த functions, numerical ranges அடிப்படையிலான array-களை உருவாக்குவதில் மிகவும் பயனுள்ளதாக இருக்கின்றன, ஏனெனில் இதனால் sequence-based calculations மற்றும் simulations எளிதாக செய்ய முடிகிறது.
 
+<div style="page-break-after: always;"></div>
+
 ### 5. NUMPY − INDEXING & SLICING
 
 NumPy array-களில் **indexing** மற்றும் **slicing** methods மிக முக்கியமானவை, ஏனெனில் இவையால் array-களின் தனிப்பட்ட elements-ஐ அணுகுவதோடு, array-களின் ஒரு பகுதியை எளிதாக பிரிக்கவும் முடிகிறது. இவை data extraction மற்றும் manipulation-ஐ மிக எளிதாக்குகின்றன.
@@ -366,6 +371,7 @@ print("Sliced array:", arr[1:4])  # Slicing
 ```
 
 **Output:**
+
 ```
 Element at index 2: 30
 Sliced array: [20 30 40]
@@ -384,7 +390,7 @@ Sliced array: [20 30 40]
 
 இந்த methods data extraction-ஐ மிக எளிமையாக மாற்றுகின்றன, மேலும் NumPy array-களுடன் நாம் பயனுள்ளதாக மற்றும் திறமையாக செயல்பட உதவுகின்றன.
 
-
+<div style="page-break-after: always;"></div>
 
 ### 6. NUMPY − ADVANCED INDEXING
 
@@ -432,56 +438,56 @@ Filtered array with condition: [30 40 50]
 
 இந்த advanced indexing முறைகள் NumPy array-களில் data selection மற்றும் manipulation-ஐ நுணுக்கமாகவும் திறமையாகவும் செயல்படுத்த உதவுகின்றன.
 
+<div style="page-break-after: always;"></div>
 
+### 7. NUMPY − BROADCASTING
 
-- ### 7. NUMPY − BROADCASTING
+NumPy-யில் **broadcasting** என்பது shape-கள் வேறுபட்ட array-களை arithmetic operations-ல் பயன்படுத்த ஒரு நுட்பமாகும். இது data-ஐ duplicate செய்யாமல், memory-efficient-ஆக operations-ஐ நேரடியாக செய்ய உதவுகிறது. Broadcasting-ஐ பயன்படுத்தி arrays-இல் arithmetic operations செய்யும்போது, NumPy data-ஐ தானாகவே மிக எளிதாகப் பொருந்தும் விதமாக மாற்றுகிறது.
 
-  NumPy-யில் **broadcasting** என்பது shape-கள் வேறுபட்ட array-களை arithmetic operations-ல் பயன்படுத்த ஒரு நுட்பமாகும். இது data-ஐ duplicate செய்யாமல், memory-efficient-ஆக operations-ஐ நேரடியாக செய்ய உதவுகிறது. Broadcasting-ஐ பயன்படுத்தி arrays-இல் arithmetic operations செய்யும்போது, NumPy data-ஐ தானாகவே மிக எளிதாகப் பொருந்தும் விதமாக மாற்றுகிறது.
+#### Broadcasting என்றால் என்ன?
 
-  #### Broadcasting என்றால் என்ன?
+Broadcasting என்பது NumPy-யின் திறனாக, இரண்டு array-களின் shape-கள் பொருந்தாதபோதும், arithmetic operations-ஐ செய்து முடிக்க data-ஐ தானாக விரிவாக்கி ஆக்க முறையாகும். NumPy-யின் broadcasting விதிகள் array-களை ஒன்று சேர்க்கவும், குறைந்த memory-யில் calculations செய்யவும் உதவுகின்றன.
 
-  Broadcasting என்பது NumPy-யின் திறனாக, இரண்டு array-களின் shape-கள் பொருந்தாதபோதும், arithmetic operations-ஐ செய்து முடிக்க data-ஐ தானாக விரிவாக்கி ஆக்க முறையாகும். NumPy-யின் broadcasting விதிகள் array-களை ஒன்று சேர்க்கவும், குறைந்த memory-யில் calculations செய்யவும் உதவுகின்றன.
+```python
+import numpy as np
 
-  
+# Broadcasting உதாரணம்
+array1 = np.array([1, 2, 3])
+array2 = np.array([[1], [2], [3]])
 
-  ```python
-  import numpy as np
-  
-  # Broadcasting உதாரணம்
-  array1 = np.array([1, 2, 3])
-  array2 = np.array([[1], [2], [3]])
-  
-  result = array1 + array2
-  print("Broadcasted array:\n", result)
-  ```
+result = array1 + array2
+print("Broadcasted array:\n", result)
+```
 
-  **Output:**
-  ```
-  Broadcasted array:
-   [[2 3 4]
-   [3 4 5]
-   [4 5 6]]
-  ```
+**Output:**
+```
+Broadcasted array:
+ [[2 3 4]
+ [3 4 5]
+ [4 5 6]]
+```
 
-  #### விளக்கம்:
-  - **array1**: 1D array, இதன் shape `(3,)`
-  - **array2**: 2D array, இதன் shape `(3, 1)`
+#### விளக்கம்:
+- **array1**: 1D array, இதன் shape `(3,)`
+- **array2**: 2D array, இதன் shape `(3, 1)`
 
-  இங்கு, broadcasting நுட்பம் **array1**-ஐ **array2**-இன் shape-க்கு பொருந்தும் வகையில் தானாக விரிவாக்குகிறது, அதன் பிறகு arithmetic operation நடக்கிறது. NumPy இவ்வாறு array-களை தானாக பொருத்துவது மூலமாக memory-யை சிக்கனமாக பயன்படுத்தி calculations செய்யும் திறன் அதிகரிக்கிறது.
+இங்கு, broadcasting நுட்பம் **array1**-ஐ **array2**-இன் shape-க்கு பொருந்தும் வகையில் தானாக விரிவாக்குகிறது, அதன் பிறகு arithmetic operation நடக்கிறது. NumPy இவ்வாறு array-களை தானாக பொருத்துவது மூலமாக memory-யை சிக்கனமாக பயன்படுத்தி calculations செய்யும் திறன் அதிகரிக்கிறது.
 
-  Broadcasting பின்பற்ற வேண்டிய முக்கியமான விதிமுறைகள்:
-  1. **Dimension Compatibility**: இரண்டு array-களின் dimensions சமமாக இருக்க வேண்டும் அல்லது அவற்றில் ஏதாவது ஒரு dimension 1 என்ற அளவிற்கு சமமாக இருக்க வேண்டும்.
-  2. **Automatic Expansion**: Lower-dimensional arrays தானாகவே higher-dimensional array-க்கு பொருந்தும் வகையில் விரிவாக்கப்படுகின்றன.
-  3. **Efficient Operations**: Broadcasting-ன் மூலம் unnecessary data duplication-ஐ தவிர்க்கும் மற்றும் memory-யை சிறப்பாக பயன்படுத்தும்.
-  4. **Memory Efficiency**: Broadcasting data duplication இல்லாமல் calculations செய்ய உதவுகிறது, இதனால் memory utilization மேம்படுகிறது.
-  5. **Code Simplification**: Code-ஐ சுருக்கமாகவும் சுலபமாகவும் எழுத முடிகிறது, அதனால் complex array operations-ஐ நேரடியாக எழுதி புரியவைக்கலாம்.
-  6. **Performance**: Broadcasting arithmetic operations-ஐ வேகமாக செய்யும் திறன் கொண்டது, ஏனெனில் NumPy backend-ல் vectorized operations பயன்படுத்துகிறது.
+Broadcasting பின்பற்ற வேண்டிய முக்கியமான விதிமுறைகள்:
+1. **Dimension Compatibility**: இரண்டு array-களின் dimensions சமமாக இருக்க வேண்டும் அல்லது அவற்றில் ஏதாவது ஒரு dimension 1 என்ற அளவிற்கு சமமாக இருக்க வேண்டும்.
+2. **Automatic Expansion**: Lower-dimensional arrays தானாகவே higher-dimensional array-க்கு பொருந்தும் வகையில் விரிவாக்கப்படுகின்றன.
+3. **Efficient Operations**: Broadcasting-ன் மூலம் unnecessary data duplication-ஐ தவிர்க்கும் மற்றும் memory-யை சிறப்பாக பயன்படுத்தும்.
+4. **Memory Efficiency**: Broadcasting data duplication இல்லாமல் calculations செய்ய உதவுகிறது, இதனால் memory utilization மேம்படுகிறது.
+5. **Code Simplification**: Code-ஐ சுருக்கமாகவும் சுலபமாகவும் எழுத முடிகிறது, அதனால் complex array operations-ஐ நேரடியாக எழுதி புரியவைக்கலாம்.
+6. **Performance**: Broadcasting arithmetic operations-ஐ வேகமாக செய்யும் திறன் கொண்டது, ஏனெனில் NumPy backend-ல் vectorized operations பயன்படுத்துகிறது.
 
-  ### எப்போது Broadcasting உதவிகரமாக இருக்கும்?
-  - **வெவ்வேறு Shape கொண்ட Array-களுக்கு Calculations செய்யும்போது**.
-  - **Data Analysis மற்றும் Machine Learning** calculations செய்யும் போது broadcasting மிகவும் முக்கியம்.
+### எப்போது Broadcasting உதவிகரமாக இருக்கும்?
+- **வெவ்வேறு Shape கொண்ட Array-களுக்கு Calculations செய்யும்போது**.
+- **Data Analysis மற்றும் Machine Learning** calculations செய்யும் போது broadcasting மிகவும் முக்கியம்.
 
-  Broadcasting மூலம், NumPy பயனர் data-ஐ duplicate செய்யாமல் எளிமையாகவும் திறமையாகவும் operations-ஐ செய்ய உதவுகிறது, இதன் மூலம் high-performance calculations மற்றும் memory efficiency ஆகியவை அதிகரிக்கின்றன.
+Broadcasting மூலம், NumPy பயனர் data-ஐ duplicate செய்யாமல் எளிமையாகவும் திறமையாகவும் operations-ஐ செய்ய உதவுகிறது, இதன் மூலம் high-performance calculations மற்றும் memory efficiency ஆகியவை அதிகரிக்கின்றன.
+
+<div style="page-break-after: always;"></div>
 
 ### 8. NUMPY − ITERATING OVER ARRAY
 
@@ -640,7 +646,7 @@ x: 3, y: 3
 
 இவை NumPy array-களில் iteration மற்றும் data handling-ஐ மிகவும் திறமையான முறையில் செய்ய உதவுகின்றன.
 
-
+<div style="page-break-after: always;"></div>
 
 ### 9. NUMPY – ARRAY MANIPULATION
 
@@ -722,10 +728,6 @@ Flattened array: [1 2 3 4 5 6]
 - **flatten()** method-ஐ பயன்படுத்தி multi-dimensional array-ஐ ஒரே dimension-க்குள் flatten செய்து convert செய்கிறோம்.
 - Flatten operation array-ஐ reshape செய்யாமல், ஒரு continuous structure-ஆக return செய்யும்.
 - **flatten()**: Multi-dimensional array-ஐ single-dimensional array-ஆக மாற்றும், இது ஒரு new flattened copy-ஐ return செய்யும்.
-
-### 9. NUMPY – ARRAY MANIPULATION (continued)
-
-NumPy array-களை manipulate செய்வதற்கான சில முக்கியமான methods குறித்து விரிவாகப் பார்ப்போம், இது memory-efficient ஆகவும் data handling-ஐ எளிதாகவும் செயல்படுத்த உதவும்.
 
 #### 9.4. numpy.ravel
 
@@ -909,112 +911,107 @@ Broadcasted array:
 
 **குறிப்பு**: **broadcast()** மற்றும் **broadcast_to()**: Broadcasting principle-ஐ பயன்படுத்தி arrays-இல் operations செய்ய memory-efficient-ஆகவும் computationally fast-ஆகவும் மாற்றுகின்றன.
 
-- ### 9. NUMPY – ARRAY MANIPULATION (continued)
+#### 9.10. numpy.expand_dims
 
-  NumPy array-களை manipulate செய்வதற்கான methods-ஐ விரிவாக பார்க்கலாம். இவை data structure-ஐ மாற்றவும், reshape செய்யவும், array-களை இணைக்கவும் உதவுகின்றன.
+**expand_dims()** function-ஐ பயன்படுத்தி array-இல் ஒரு புதிய axis-ஐ சேர்த்து, அதன் dimensionality-ஐ அதிகரிக்க முடியும். இது array-ஐ reshape செய்து, அதனை higher-dimensional array-ஆக மாற்ற உதவுகிறது.
 
-  #### 9.9. numpy.expand_dims
+**Example:**
 
-  **expand_dims()** function-ஐ பயன்படுத்தி array-இல் ஒரு புதிய axis-ஐ சேர்த்து, அதன் dimensionality-ஐ அதிகரிக்க முடியும். இது array-ஐ reshape செய்து, அதனை higher-dimensional array-ஆக மாற்ற உதவுகிறது.
+```python
+import numpy as np
 
-  **Example:**
+# Array dimensionality-ஐ அதிகரித்தல்
+array = np.array([1, 2, 3])
+expanded_array = np.expand_dims(array, axis=0)
+print("Expanded array:\n", expanded_array)
+```
 
-  ```python
-  import numpy as np
-  
-  # Array dimensionality-ஐ அதிகரித்தல்
-  array = np.array([1, 2, 3])
-  expanded_array = np.expand_dims(array, axis=0)
-  print("Expanded array:\n", expanded_array)
-  ```
+**Output:**
+```
+Expanded array:
+ [[1 2 3]]
+```
 
-  **Output:**
-  ```
-  Expanded array:
-   [[1 2 3]]
-  ```
+#### விளக்கம்:
+- இங்கு, **expand_dims()** function array-இல் ஒரு புதிய axis-ஐ (dimension) சேர்க்கிறது.
+- **axis=0** என்பதை குறிப்பிடுவதன் மூலம், original 1D array `[1, 2, 3]` ஒரு 2D array-ஆக (`[[1, 2, 3]]`) மாற்றப்படுகிறது.
+- இது data-ஐ reshape செய்ய, multi-dimensional data handling-ஐ எளிதாக்க உதவுகிறது.
 
-  #### விளக்கம்:
-  - இங்கு, **expand_dims()** function array-இல் ஒரு புதிய axis-ஐ (dimension) சேர்க்கிறது.
-  - **axis=0** என்பதை குறிப்பிடுவதன் மூலம், original 1D array `[1, 2, 3]` ஒரு 2D array-ஆக (`[[1, 2, 3]]`) மாற்றப்படுகிறது.
-  - இது data-ஐ reshape செய்ய, multi-dimensional data handling-ஐ எளிதாக்க உதவுகிறது.
+#### 9.12. numpy.squeeze
 
-  #### 9.10. numpy.squeeze
+**squeeze()** function-ஐ பயன்படுத்தி array-இல் உள்ள unwanted singleton dimensions-ஐ (அதாவது length 1 கொண்ட dimensions) அகற்றலாம். இது array-ஐ compact-ஆக மாற்றி அதன் shape-ஐ குறைக்க உதவுகிறது.
 
-  **squeeze()** function-ஐ பயன்படுத்தி array-இல் உள்ள unwanted singleton dimensions-ஐ (அதாவது length 1 கொண்ட dimensions) அகற்றலாம். இது array-ஐ compact-ஆக மாற்றி அதன் shape-ஐ குறைக்க உதவுகிறது.
+**Example:**
 
-  **Example:**
+```python
+# Singleton dimensions-ஐ நீக்குதல்
+array = np.array([[[1, 2, 3]]])
+squeezed_array = np.squeeze(array)
+print("Squeezed array:", squeezed_array)
+```
 
-  ```python
-  # Singleton dimensions-ஐ நீக்குதல்
-  array = np.array([[[1, 2, 3]]])
-  squeezed_array = np.squeeze(array)
-  print("Squeezed array:", squeezed_array)
-  ```
+**Output:**
+```
+Squeezed array: [1 2 3]
+```
 
-  **Output:**
-  ```
-  Squeezed array: [1 2 3]
-  ```
+#### விளக்கம்:
+- **squeeze()** method array-இல் உள்ள unnecessary singleton dimensions-ஐ நீக்குகிறது.
+- எங்கள் உதாரணத்தில், 3D array `[ [[1, 2, 3]] ]` ஒரு 1D array `[1, 2, 3]`-ஆக மாற்றப்படுகிறது.
+- இது unwanted dimensions-ஐ அகற்றுவதால் memory usage மற்றும் data processing எளிதாகும்.
 
-  #### விளக்கம்:
-  - **squeeze()** method array-இல் உள்ள unnecessary singleton dimensions-ஐ நீக்குகிறது.
-  - எங்கள் உதாரணத்தில், 3D array `[ [[1, 2, 3]] ]` ஒரு 1D array `[1, 2, 3]`-ஆக மாற்றப்படுகிறது.
-  - இது unwanted dimensions-ஐ அகற்றுவதால் memory usage மற்றும் data processing எளிதாகும்.
+#### 9.13. numpy.concatenate
 
-  #### 9.11. numpy.concatenate
+**concatenate()** function-ஐ பயன்படுத்தி இரண்டு அல்லது அதற்கும் அதிகமான array-களை ஒரு இணைந்த array-ஆக உருவாக்கலாம். இது arrays-ஐ sequentially இணைத்து, single array-ஆக return செய்கிறது.
 
-  **concatenate()** function-ஐ பயன்படுத்தி இரண்டு அல்லது அதற்கும் அதிகமான array-களை ஒரு இணைந்த array-ஆக உருவாக்கலாம். இது arrays-ஐ sequentially இணைத்து, single array-ஆக return செய்கிறது.
+**Example:**
 
-  **Example:**
+```python
+# Arrays-ஐ concatenate செய்தல்
+array1 = np.array([1, 2, 3])
+array2 = np.array([4, 5, 6])
+concatenated_array = np.concatenate((array1, array2))
+print("Concatenated array:", concatenated_array)
+```
 
-  ```python
-  # Arrays-ஐ concatenate செய்தல்
-  array1 = np.array([1, 2, 3])
-  array2 = np.array([4, 5, 6])
-  concatenated_array = np.concatenate((array1, array2))
-  print("Concatenated array:", concatenated_array)
-  ```
+**Output:**
+```
+Concatenated array: [1 2 3 4 5 6]
+```
 
-  **Output:**
-  ```
-  Concatenated array: [1 2 3 4 5 6]
-  ```
+#### விளக்கம்:
+- **concatenate()** function array-களை இணைத்து ஒரு single-dimensional array-ஆக return செய்கிறது.
+- எங்கள் உதாரணத்தில், **array1** மற்றும் **array2** இணைக்கப்பட்டு, **[1, 2, 3, 4, 5, 6]** என்ற array-ஆகவும் உருவாக்கப்பட்டது.
+- இது data merging மற்றும் continuous sequences-ஐ உருவாக்க உதவுகிறது.
 
-  #### விளக்கம்:
-  - **concatenate()** function array-களை இணைத்து ஒரு single-dimensional array-ஆக return செய்கிறது.
-  - எங்கள் உதாரணத்தில், **array1** மற்றும் **array2** இணைக்கப்பட்டு, **[1, 2, 3, 4, 5, 6]** என்ற array-ஆகவும் உருவாக்கப்பட்டது.
-  - இது data merging மற்றும் continuous sequences-ஐ உருவாக்க உதவுகிறது.
+#### 9.14. numpy.stack
 
-  #### 9.12. numpy.stack
+**stack()** function-ஐ பயன்படுத்தி arrays-ஐ ஒரு புதிய axis-இல் stack செய்ய முடியும். இது arrays-ஐ vertically அல்லது horizontally stack செய்து, multi-dimensional structure-ஆக மாற்ற உதவுகிறது.
 
-  **stack()** function-ஐ பயன்படுத்தி arrays-ஐ ஒரு புதிய axis-இல் stack செய்ய முடியும். இது arrays-ஐ vertically அல்லது horizontally stack செய்து, multi-dimensional structure-ஆக மாற்ற உதவுகிறது.
+**Example:**
 
-  **Example:**
+```python
+# Arrays-ஐ stack செய்தல்
+array1 = np.array([1, 2, 3])
+array2 = np.array([4, 5, 6])
+stacked_array = np.stack((array1, array2), axis=1)
+print("Stacked array:\n", stacked_array)
+```
 
-  ```python
-  # Arrays-ஐ stack செய்தல்
-  array1 = np.array([1, 2, 3])
-  array2 = np.array([4, 5, 6])
-  stacked_array = np.stack((array1, array2), axis=1)
-  print("Stacked array:\n", stacked_array)
-  ```
+**Output:**
+```
+Stacked array:
+ [[1 4]
+ [2 5]
+ [3 6]]
+```
 
-  **Output:**
-  ```
-  Stacked array:
-   [[1 4]
-   [2 5]
-   [3 6]]
-  ```
+#### விளக்கம்:
+- **stack()** function arrays-ஐ ஒரு புதிய axis-இல் stack செய்கிறது, இதனால் data-ஐ multi-dimensional format-ஆக மாற்றுகிறது.
+- **axis=1** என்ற option-ஐ பயன்படுத்தியதால், **array1** மற்றும் **array2** values horizontal-ஆக stack ஆகின்றன.
+- இது data representation-ஐ மாற்றுவதிலும், matrix operations செய்யவும் பயன்படும்.
 
-  #### விளக்கம்:
-  - **stack()** function arrays-ஐ ஒரு புதிய axis-இல் stack செய்கிறது, இதனால் data-ஐ multi-dimensional format-ஆக மாற்றுகிறது.
-  - **axis=1** என்ற option-ஐ பயன்படுத்தியதால், **array1** மற்றும் **array2** values horizontal-ஆக stack ஆகின்றன.
-  - இது data representation-ஐ மாற்றுவதிலும், matrix operations செய்யவும் பயன்படும்.
-
-
-### 9.13. numpy.hstack and numpy.vstack
+#### 9.15. numpy.hstack and numpy.vstack
 
 **hstack()** மற்றும் **vstack()** functions-ஐ பயன்படுத்தி arrays-ஐ horizontal மற்றும் vertical-ஆக stack செய்ய முடியும். 
 
@@ -1068,7 +1065,7 @@ Vertically stacked array:
 - **vstack()** function arrays-ஐ vertical-ஆக stack செய்கிறது, அதாவது arrays-ஐ row-wise align செய்து multi-dimensional array ஆக return செய்கிறது.
 - இது data handling மற்றும் matrix operations-ஐ சிறப்பாக செய்ய உதவுகிறது.
 
-### 9.14. numpy.split
+#### 9.16. numpy.split
 
 **split()** function-ஐ பயன்படுத்தி, ஒரு array-ஐ பல துண்டுகளாக பிரிக்கலாம். இது array-ஐ user-defined number of sub-arrays ஆக களவாக பிரிக்க உதவுகிறது.
 
@@ -1090,7 +1087,7 @@ Split arrays: [array([1, 2]), array([3, 4]), array([5, 6])]
 - **split()** function array-ஐ user-defined size-க்கு sub-arrays ஆகப் பிரிக்கிறது.
 - இந்த உதாரணத்தில், **array** ஐ மூன்று sub-arrays ஆக பிரிக்கப்பட்டு, ஒவ்வொரு array-க்கும் 2 elements ஆக return செய்கிறது.
 
-### 9.15. numpy.hsplit and numpy.vsplit
+#### 9.17. numpy.hsplit and numpy.vsplit
 
 **hsplit()** மற்றும் **vsplit()** functions-ஐ horizontal மற்றும் vertical-ஆக arrays-ஐ பிரிக்க முடியும். 
 
@@ -1140,7 +1137,7 @@ Vertically split arrays: [array([[1, 2, 3]]), array([[4, 5, 6]])]
 - **vsplit()** function arrays-ஐ vertical-ஆக row-wise பிரிக்க உதவுகிறது.
 - இது multi-dimensional arrays-ஐ row-wise sub-arrays ஆக பிரிக்க உதவுகிறது.
 
-### 9.16. numpy.resize
+#### 9.18. numpy.resize
 
 **resize()** function array-ஐ ஒரு புதிய shape-க்கு மாற்றி அமைக்க உதவுகிறது. இது array-ஐ நினைவில் (memory) நிரப்பியபடி அல்லது பின்னர் அளவுடன் conform செய்து மாற்றிக்கொள்ள முடியும்.
 
@@ -1166,7 +1163,7 @@ Resized array:
 
 இந்த methods எல்லாம் NumPy array-களை விரிவாக manipulate செய்து, memory-efficient-ஆக data handling மற்றும் reshaping செய்ய உதவுகின்றன.
 
-### 9.17. numpy.append
+#### 9.19. numpy.append
 
 **append()** function-ஐ பயன்படுத்தி, existing array-இன் முடிவில் values-ஐ சேர்க்க முடியும். இது original array-ஐ மாற்றாது; இதற்கு பதிலாக, புதிய array-ஐ return செய்யும், அதில் original values மற்றும் புதிய values இணைக்கப்படும்.
 
@@ -1197,7 +1194,7 @@ Appended array: [1 2 3 4 5 6]
 
   **குறிப்பு**: Original array-ஐ மாற்றாமல், புதிய array-ஐ return செய்கிறது.
 
-### 9.18. numpy.insert
+#### 9.20. numpy.insert
 
 **insert()** function-ஐ பயன்படுத்தி, array-இல் ஒரு குறிப்பிட்ட இடத்தில் values-ஐ insert செய்ய முடியும். இந்த method-ல், நீங்கள் எந்த இடத்தில் values-ஐ சேர்க்க வேண்டும் என்பதையும், எந்த values-ஐ சேர்க்க வேண்டும் என்பதையும் குறிப்பிடலாம்.
 
@@ -1224,7 +1221,7 @@ Inserted array: [1 7 8 2 3]
 
   **குறிப்பு**: எந்த இடத்தில் values சேர்க்க வேண்டும் என்பதையும், அந்த values-ஐ குறிப்பிட்ட இடத்தில் insert செய்வதை நிர்ணயிக்கலாம்.
 
-### 9.19. numpy.delete
+#### 9.21. numpy.delete
 
 **delete()** function-ஐ பயன்படுத்தி, array-இல் unwanted values-ஐ அல்லது indices-ஐ அகற்றலாம். இது original array-ஐ modify செய்யாது; இது unwanted values-ஐ அகற்றி, புதிய array-ஐ return செய்கிறது.
 
@@ -1249,7 +1246,7 @@ Deleted array: [1 3 5]
 
   **குறிப்பு**: Original array-ஐ மாற்றாது, புதிய array-ஐ return செய்து unwanted data-ஐ clean செய்கிறது.
 
-### 9.20. numpy.unique
+#### 9.22. numpy.unique
 
 **unique()** function-ஐ பயன்படுத்தி, array-இல் உள்ள repeating elements-ஐ அகற்றி, unique values-ஐ மட்டும் return செய்யலாம். இது data analysis மற்றும் data cleaning செயல்பாடுகளில் மிகவும் பயனுள்ளது.
 
