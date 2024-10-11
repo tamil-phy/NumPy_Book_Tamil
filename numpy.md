@@ -122,17 +122,6 @@ NumPy-ல் array-களை உருவாக்க பல்வேறு meth
 
 **numpy.empty()** function ஒரு initialization values இல்லாத array-ஐ உருவாக்க பயன்படுகிறது. இதனால், array-இல் உள்ள values ஏதாவது முன்பே memory-யில் இருந்த random values ஆக இருக்கும். இதனால், memory-யில் உள்ள values reset செய்யப்படாமல், அந்த values 그대로 array-இல் வரலாம்.
 
-**Syntax:**
-
-```python
-numpy.empty(shape, dtype=float, order='C')
-```
-
-- **shape**: இது array-இன் structure-ஐ (rows, columns) குறிப்பிடுகிறது.
-- **dtype**: இந்த optional parameter மூலம் array-இன் data type-ஐ குறிப்பிடலாம். (default: `float`)
-- **order**: memory layout-ஐ குறிப்பிடும் (default: 'C', C-style row-major order).
-
-**Example:**
 ```python
 import numpy as np
 
