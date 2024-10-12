@@ -1,5 +1,9 @@
 # NumPy
 
+[toc]
+
+
+
 ### 1. NUMPY − ARRAY ATTRIBUTES
 
 #### 1.1. ndarray.shape
@@ -332,7 +336,7 @@ Array using logspace: [  10.          31.6227766  100.         316.22776602 1000
 
 இங்கு, **logspace()** function base 10 powers-இல், **start** value 10^1-இல் இருந்து **stop** value 10^3 வரை மொத்தம் 5 values-ஐ logarithmic scale-ல் return செய்கிறது. இதனால், [10, 31.62, 100, 316.22, 1000] போன்ற logarithmic values கொண்ட array உருவாக்கப்படுகிறது.
 
-### Key Differences
+
 
 - **arange()**: Regular intervals-ஐ கொண்ட array values-ஐ return செய்கிறது.
 - **linspace()**: Start மற்றும் stop values இடையே even spacing கொண்ட values-ஐ return செய்கிறது.
@@ -360,8 +364,6 @@ print("Sliced array:", arr[1:4])  # Slicing
 Element at index 2: 30
 Sliced array: [20 30 40]
 ```
-
-#### Explanation
 
 - **Indexing**: Indexing-ஐ பயன்படுத்தி, array-இல் உள்ள குறிப்பிட்ட இடத்தில் இருக்கும் element-ஐ நேரடியாக அணுக முடியும். Example-இல், **arr[2]** என்பது array-இன் மூன்றாவது இடத்தில் உள்ள value **30**-ஐ அணுகுகிறது.
 
@@ -442,8 +444,6 @@ Broadcasted array:
  [3 4 5]
  [4 5 6]]
 ```
-
-#### விளக்கம்:
 
 - **array1**: 1D array, இதன் shape `(3,)`
 - **array2**: 2D array, இதன் shape `(3, 1)`
@@ -2256,7 +2256,7 @@ Random matrix:
 - **Simulation Modeling**: Random values-ஐ அடிப்படையாக simulation-களை உருவாக்க வேண்டிய data structures-ல்.
 - **Algorithm Testing**: Machine learning algorithms மற்றும் computational models-ஐ random input data கொண்டு validate செய்ய.
 
-### Key Features of matlib.rand()
+
 
 - **Uniform Distribution**: Random values-ஐ 0 மற்றும் 1 இடையே சமமான probability கொண்டு உருவாக்கும்.
 - **Memory-efficient**: Memory-யை அளவிற்கேற்ப allocate செய்து, large-scale data generation-ஐ செய்யும்.

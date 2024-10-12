@@ -15,13 +15,23 @@ print("Shape of array:", arr.shape)
 
 மேலே கொடுக்கப்பட்டுள்ள code-இல், **arr** என்ற 2D array உருவாக்கப்பட்டுள்ளது. இந்த array-இன் **shape** attribute-ஐ பயன்படுத்தி array-இன் அமைப்பை அறியலாம்.
 
+```mermaid
+graph TD
+    A[ndarray] --> B[Shape Attribute]
+    B --> C[Number of Rows]
+    B --> D[Number of Columns]
+
+```
+
+
+
 அதாவது, இதன் **output:**
 
 ```
 Shape of array: (2, 3)
 ```
 
-  இந்த array-இல் 2 rows மற்றும் 3 columns உள்ளன என்று பொருள். 
+இந்த array-இல் 2 rows மற்றும் 3 columns உள்ளன என்று பொருள். 
 
 இதன் மூலம், **shape** attribute ஒரு Numpy array-இன் கட்டமைப்பை (structure) முழுமையாக குறிக்க உதவுகிறது.
 
@@ -39,6 +49,17 @@ print("Number of dimensions:", arr.ndim)
 ```
 
 மேலே கொடுக்கப்பட்டுள்ள code-இல், **arr** என்ற 2D array உருவாக்கப்பட்டுள்ளது. இந்த array-இன் **ndim** attribute-ஐ பயன்படுத்தி array-இன் பரிமாணங்களின் எண்ணிக்கையை (number of dimensions) அறியலாம்.
+
+```mermaid
+graph TD
+    A[ndarray] --> B[ndim Attribute]
+    B --> C[1D]
+    B --> D[2D]
+    B --> E[3D or more]
+
+```
+
+
 
 **Output:**
 
@@ -63,6 +84,16 @@ print("Item size of array:", arr.itemsize, "bytes")
 
 இந்த code-இல், **arr** என்ற 1D array உருவாக்கப்பட்டுள்ளது, மற்றும் **itemsize** attribute-ஐ பயன்படுத்தி array-இன் ஒவ்வொரு element-ஐ memory-யில் represent செய்ய எவ்வளவு bytes எடுக்கின்றது என்பதை பார்க்கலாம்.
 
+```mermaid
+graph TD
+    A[ndarray] --> B[Itemsize Attribute]
+    B --> C[Memory per Element]
+    C --> D[Bytes]
+
+```
+
+
+
 **Output:**
 
 ```
@@ -85,6 +116,21 @@ print("Flags of the array:\n", arr.flags)
 ```
 
 இந்த code-இல், **arr** என்ற 1D array உருவாக்கப்பட்டுள்ளது, மற்றும் **flags** attribute-ஐ பயன்படுத்தி array-இன் memory layout பற்றிய தகவல்களை அறியலாம்.
+
+```mermaid
+graph LR
+    A[ndarray] --> B[Flags Attribute]
+    subgraph Flags
+        B --> C[C_CONTIGUOUS: Row-major order]
+        B --> D[F_CONTIGUOUS: Column-major order]
+        B --> E[OWNDATA: Owns its data]
+        B --> F[WRITEABLE: Can be modified]
+        B --> G[ALIGNED: Properly aligned in memory]
+        B --> H[WRITEBACKIFCOPY: Write-back needed]
+    end
+
+
+```
 
 **Output:**
 
