@@ -1,0 +1,23 @@
+/* Set background color to white */
+body {
+    background-color: white;
+    color: black;
+}
+
+/* Ensure links are visible on the white background */
+a {
+    color: blue;  /* Or any other color you'd prefer for links */
+}
+
+/* Ensure code blocks are visible */
+code, pre {
+    background-color: #f8f8f8;
+    color: black;
+}
+
+/* Set header colors to black */
+h1, h2, h3, h4, h5, h6 {
+    color: black;
+}
+
+/* Any additional styles you'd like for lists, tables, etc. */

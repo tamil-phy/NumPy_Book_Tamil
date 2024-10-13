@@ -2,6 +2,20 @@
 
 NumPy-ல் array-களை உருவாக்க பல்வேறு methods உள்ளன, அவற்றைப் பயன்படுத்தி data handling மற்றும் computation process-களை எளிதாக்கலாம். இப்போது, சில பொதுவாகப் பயன்படுத்தப்படும் array creation functions பற்றி விரிவாகப் பார்ப்போம்.
 
+```mermaid
+graph TD
+    A[NumPy Array Creation Routines]
+
+    B[numpy.empty] --> B_desc[Creates an uninitialized array]
+    C[numpy.zeros] --> C_desc[Creates an array filled with zeros]
+    D[numpy.ones] --> D_desc[Creates an array filled with ones]
+
+    A --> B
+    A --> C
+    A --> D
+
+```
+
 #### 2.1. numpy.empty
 
 **numpy.empty()** function ஒரு initialization values இல்லாத array-ஐ உருவாக்க பயன்படுகிறது. இதனால், array-இல் உள்ள values ஏதாவது முன்பே memory-யில் இருந்த random values ஆக இருக்கும். இதனால், memory-யில் உள்ள values reset செய்யப்படாமல், அந்த values 그대로 array-இல் வரலாம்.

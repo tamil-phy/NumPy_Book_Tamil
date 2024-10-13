@@ -2,6 +2,22 @@
 
 Numpy-ல் array-களை உருவாக்குவதற்கான முக்கியமான வழிகளில் ஒன்றாக **Existing data**-விலிருந்து array-ஐ உருவாக்குவது அமைகிறது. இது Python-ல் ஏற்கனவே இருக்கும் data structures, போன்றவை (lists, buffers, iterables) கொண்டு நமக்கு தேவையான array-களை எளிதாக உருவாக்க உதவுகிறது. இதனால் data-ஐ NumPy-யின் powerful array operations-இல் பயன்படுத்த முடியும்.
 
+```mermaid
+graph TD
+    A[NumPy - Array from Existing Data]
+
+    B[numpy.asarray] --> B_desc[Converts input to ndarray]
+    C[numpy.frombuffer] --> C_desc[Creates array from buffer object]
+    D[numpy.fromiter] --> D_desc[Creates array from an iterable object]
+
+    A --> B
+    A --> C
+    A --> D
+
+```
+
+
+
 #### 3.1. numpy.asarray
 
 **asarray()** function-ஐ பயன்படுத்தி, ஒரு existing data-ஐ NumPy array-ஆக மாற்றலாம். இதன் முக்கிய பயனாக, இதனால் original data-ஐ clone செய்து, array-ஆக மாற்றுவதில் பயன்படுத்தப்படும் memory space குறைவாக இருக்கும்.
